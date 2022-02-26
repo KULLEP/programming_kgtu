@@ -1,0 +1,72 @@
+[
+  {
+    "_id": "616715b684da48ad87231c09",
+    "year_of_birth": 1990,
+    "last_name": "Смирнов",
+    "department": "Отделение кибербезопасности",
+    "experience": 11
+  },
+  {
+    "_id": "616715b6bce9519571ebd821",
+    "year_of_birth": 1989,
+    "last_name": "Иванов",
+    "department": "Frontend",
+    "experience": 4
+  },
+  {
+    "_id": "616715b6f0799b7dde84e276",
+    "year_of_birth": 1980,
+    "last_name": "Кузнецов",
+    "department": "Frontend",
+    "experience": 5
+  },
+  {
+    "_id": "616715b6ff0449a7184bbef0",
+    "year_of_birth": 1987,
+    "last_name": "Соколов",
+    "department": "Frontend",
+    "experience": 7
+  },
+  {
+    "_id": "616715b6c27fad2a606f2359",
+    "year_of_birth": 1987,
+    "last_name": "Попов",
+    "department": "Backend",
+    "experience": 5
+  },
+  {
+    "_id": "616715b6fa8d69f7ff6d444a",
+    "year_of_birth": 1978,
+    "last_name": "Лебедев",
+    "department": "Backend",
+    "experience": 13
+  },
+  {
+    "_id": "616715b6efcc7dfb6c2c3274",
+    "year_of_birth": 1992,
+    "last_name": "Козлов",
+    "department": "Backend",
+    "experience": 10
+  },
+  {
+    "_id": "616715b6b2c3159b46cb07d1",
+    "year_of_birth": 1994,
+    "last_name": "Новиков",
+    "department": "Backend",
+    "experience": 11
+  },
+  {
+    "_id": "616715b6428b1fdb48a1a730",
+    "year_of_birth": 1994,
+    "last_name": "Морозов",
+    "department": "Информационная безопасность",
+    "experience": 10
+  },
+  {
+    "_id": "616715b6b8a3e55822a1ca40",
+    "year_of_birth": 1976,
+    "last_name": "Петров",
+    "department": "DevOps",
+    "experience": 4
+  }
+]
