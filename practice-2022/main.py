@@ -15,6 +15,7 @@ blueForeground = (30,136,229)
 blueLight = (33,150,243)
 blueDark = (25,118,210)
 blueLine = (21,101,192)
+shadowColor = (104,159,56)
 backgroundColor = (139,195,74)
 # Определяем начальное положение фигур 
 x = 200; y = 100
@@ -35,7 +36,10 @@ def initWindow():
 
 # Рендерим кубик
 def renderCube():
-    global partOfTheCube_1, partOfTheCube_2, partOfTheCube_3, partOfTheCube_4, partOfTheCube_5
+    global shadow, partOfTheCube_1, partOfTheCube_2, partOfTheCube_3, partOfTheCube_4, partOfTheCube_5
+    brushColor(shadowColor)
+    penSize(0)
+    shadow = circle(x+42, y+68, 43)
     penColor(blueLine)
     penSize(1)
     brushColor (blueForeground)
@@ -67,18 +71,20 @@ def keyPressed (event):
 
 # Функция перемещения куба
 def update():
+    moveObjectBy(shadow, dx, dy)
     moveObjectBy(partOfTheCube_1, dx, dy)
     moveObjectBy(partOfTheCube_2, dx, dy)
     moveObjectBy(partOfTheCube_3, dx, dy)
     moveObjectBy(partOfTheCube_4, dx, dy)
     moveObjectBy(partOfTheCube_5, dx, dy)
 
-
 # Функция проверки выхода фигуры за край поля 
 def end():
-    if 0 > min(coords(partOfTheCube_1)) or windowHeight < max(coords(partOfTheCube_5)):
-        print('Кубик убежал')
-        close()
+    global dx, dy
+    if coords(partOfTheCube_1)[0] < 0 or coords(partOfTheCube_1)[0] > windowWidth - 150:
+        dx = 0
+    elif coords(partOfTheCube_1)[1] < 0 or coords(partOfTheCube_1)[1] > windowHeight - 150:
+        dy = 0
 
 
 # Главная функция
