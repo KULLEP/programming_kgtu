@@ -78,12 +78,13 @@ def update():
     moveObjectBy(partOfTheCube_4, dx, dy)
     moveObjectBy(partOfTheCube_5, dx, dy)
 
+
 # Функция проверки выхода фигуры за край поля 
 def end():
     global dx, dy
     if coords(partOfTheCube_1)[0] < 0 or coords(partOfTheCube_1)[0] > windowWidth - 150:
         dx = 0
-    elif coords(partOfTheCube_1)[1] < 0 or coords(partOfTheCube_1)[1] > windowHeight - 150:
+    if coords(partOfTheCube_1)[1] < 0 or coords(partOfTheCube_1)[1] > windowHeight - 150:
         dy = 0
 
 
